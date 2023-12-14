@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speed Test</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./netspeed.css">
+</head>
+
+<body>
+    <video autoplay muted loop id="myVideo">
+        <source src="./background.mp4" type="video/mp4">
+    </video>
+    <main>
+        <h2 id="a11" class="a00">Speed Test <i class="bi bi-speedometer"></i></h2>
+        <h2 id="a12" class="a00">0 Mbps</h2>
+        <div class="pro1">
+            <div id="pro2" class="pro2 center">
+                <div class="pro3 center">
+                    <button id="testbtn" class="a00" onclick="InitiateSpeedDetection()">Start</button>
+                </div>
+            </div>
+        </div>
+        <!-- <div id="progress"></div> -->
+
+    </main>
+    <script src="./netspeed.js"></script>
+</body>
+
+</html>

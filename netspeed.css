@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&family=Raleway:wght@600&display=swap');
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body {
+    height: 100vh;
+    /* background-color: #000036; */
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+#myVideo {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    object-fit: cover;
+}
+
+main {
+    height: 500px;
+    width: 500px;
+    /* background-color: #00636a91; */
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#a11 {
+    margin-top: 15px;
+    font-size: 30px;
+}
+
+#a12 {
+    margin-top: 50px;
+    font-size: 40px;
+}
+
+.a00 {
+    color: #c9c9c9;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+}
+
+
+#testbtn {
+    height: 80px;
+    width: 80px;
+    border-radius: 100%;
+    background-color: #000036;
+    border: .5px solid aqua;
+    cursor: pointer;
+    transform: rotate(90deg);
+}
+
+#testbtn:hover {
+    box-shadow: 0 0 5px aqua;
+}
+
+#testbtn:active {
+    box-shadow: 0 0 20px aqua;
+}
+
+.pro2 {
+    margin-top: 30px;
+    height: 250px;
+    width: 250px;
+    background-image: conic-gradient(#ff00dd, aqua, #ff00dd);
+    border-radius: 100%;
+    transform: rotate(-90deg);
+}
+
+.spin {
+    animation-name: spin;
+    animation-duration: 500ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    /* box-shadow: 0 0 20px aqua; */
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.nospin {
+    animation-name: nospin;
+    animation-duration: 500ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes nospin {
+    from {
+        transform: rotate(360deg);
+    }
+
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+.pro3 {
+    height: 200px;
+    width: 200px;
+    background-color: #000036;
+    border-radius: 100%;
+}
